@@ -1,0 +1,59 @@
+body{
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+    font-size: 48px;
+}
+
+p{
+    border: 1px solid black;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    max-width: 600px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+div{
+    padding-right: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+video{
+    background-color: #000000;
+    border: 2px solid black;
+}
+
+.container{
+    display: flex;
+}
+
+.main{
+    background-color: #3e0691;
+    padding-left: 30px;
+    min-width: 75%;
+    height: 100vh;
+}
+
+.nav{
+    background-color: #000000;
+    color: #3e0691;
+    max-width: 25%;
+    min-width: 140px;
+    flex: 1;
+    height: 100vh;
+}
+
+.nav h1{
+    /*padding-left: 20px;*/
+    text-align: center;
+}
