@@ -34,9 +34,9 @@ header p {
 .jumbotron {
     display: flex;
     align-items: center;
-    /*background-color: #5b23ba;*/
-    background-image: url("Images/First\ Pic.PNG");
-    background-size: cover;
+    background-color: #5b23ba;
+    /*background-image: url("Images/First\ Pic.PNG");*/
+    /*background-size: cover;*/
     background-position: center;
     background-repeat: no-repeat;
     color: #5b23ba;
