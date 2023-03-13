@@ -2,12 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #000000;
+    background-color: #2f3030;
     margin: 0;
     padding: 0;
 }
 header {
     padding: 20px 0;
-    background-color: #ffffff;
+    background-color: #505252;
 }
 
 header .row,
@@ -44,6 +45,11 @@ header p {
     text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
+#jcont {
+    border-style: solid;
+    border-width: 10px;
+    border-color: goldenrod;
+}
 .jumbotron h2 {
     font-size: 60px;
     font-weight: 700;
@@ -82,4 +88,5 @@ footer {
     border-color: #000000;
     background-size: cover;
     width: 100%;
+    background-color: #505252;
 }
