@@ -36,12 +36,12 @@ header p {
     display: flex;
     align-items: center;
     background-color: #5b23ba;
-    /*background-image: url("Images/First\ Pic.PNG");*/
-    /*background-size: cover;*/
+    background-image: url("https://live.staticflickr.com/65535/52259221868_594d9c744d_b.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #5b23ba;
-    height: 500px;
+    height: 300px;
     text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
