@@ -1,0 +1,12 @@
+#showcase {
+    text-align: center;
+}
+
+.border {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    margin: 10px 10px 10px 10px;
+    height: 110px;
+    line-height: 7px;
+}
