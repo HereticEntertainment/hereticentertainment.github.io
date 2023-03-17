@@ -21,6 +21,12 @@ footer .row {
 header h1 {
     font-weight: 700;
     margin: 0;
+    padding: 15px 0 0 0;
+    float: left;
+}
+
+header img {
+    float: left;
 }
 
 header nav {
