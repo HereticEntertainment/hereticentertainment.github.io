@@ -68,7 +68,8 @@ header p:hover {
     display: flex;
     align-items: center;
     background-color: #5b23ba;
-    background-image: url("https://live.staticflickr.com/65535/52259221868_594d9c744d_b.jpg");
+    /*background-image: url("https://live.staticflickr.com/65535/52259221868_594d9c744d_b.jpg");*/
+    background-image: url("Images/hellscape.PNG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,11 +78,11 @@ header p:hover {
     text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
-#jcont {
+/*#jcont {
     border-style: solid;
     border-width: 10px;
     border-color: goldenrod;
-}
+}*/
 .jumbotron h2 {
     font-size: 60px;
     font-weight: 700;
