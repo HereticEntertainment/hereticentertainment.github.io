@@ -16,4 +16,5 @@ mail($to, $subject, $content, $headers);
 // Redirect back to Contact.html
 header('Location: Contact.html');
 exit;
+// https://dev.to/charalambosioannou/create-a-static-webpage-with-a-contact-form-on-github-pages-3532
 ?>
