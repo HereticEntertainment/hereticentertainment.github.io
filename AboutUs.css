@@ -1,16 +1,19 @@
 #showcase {
     text-align: center;
-}
-
-.border {
+    }
+    
+    .border {
     border-style: solid;
     border-width: 2px;
     border-color: #000000;
     margin: 10px 10px 10px 10px;
-    height: 110px;
-    line-height: 7px;
-}
-
-#jcont {
+    height: auto;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    #jcont {
     border-style: none;
-}
+    }
