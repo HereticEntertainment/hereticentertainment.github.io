@@ -68,8 +68,8 @@ header p:hover {
     display: flex;
     align-items: center;
     background-color: #5b23ba;
-    /*background-image: url("https://live.staticflickr.com/65535/52259221868_594d9c744d_b.jpg");*/
-    background-image: url("Images/hellscape.PNG");
+    background-image: url("https://live.staticflickr.com/65535/52259221868_594d9c744d_b.jpg");
+    /*background-image: url("Images/SpaceBackground.png");*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
