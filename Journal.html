@@ -37,13 +37,20 @@
         </section>
 
         <section class="container" id="showcase">
-            <div class="border">
-                <h4>Main Idea For Fleet Commander</h4>
-                <p>
-                    I came up with the plan for the game while reading Orson Scott Card's "Ender's Game".
-                    The idea is that you start off by controlling a single fighter space ship, and can then zoom out to control a small squadron.
-                    By continuing to zoom out, you can control larger groups of ships in an RTS style game.
-                </p>
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Main Idea For Fleet Commander</h4>
+                        <p>
+                            I came up with the plan for the game while reading Orson Scott Card's "Ender's Game".
+                            The idea is that you start off by controlling a single fighter space ship, and can then zoom out to control a small squadron.
+                            By continuing to zoom out, you can control larger groups of ships in an RTS style game.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/bbbc909205081.5635dfbd4dcd7.jpg">
+                </figure>
             </div>
         </section>
 
@@ -55,26 +62,33 @@
                         <p>
                             The current background is pretty boring.
                             I think it would be cool to have a procedurally generated background and I think I can use some old code I wrote for
-                            procedurally generated objects to add stars to the background. This is a fairly simple poisson disc sampling script that
-                            checks if where it wants to put the star is open and then places down a star.
+                            procedurally generated objects to add stars to the background. This is a fairly perlin noise script that
+                            generates a noise map and then looks for points on the map with values higher than a certain threshold to spawn stars.
                         </p>
                     </div>
                 </figure>
                 <figure class="col-sm-4">
-                    <img src="https://www1.specialolympicsontario.com/wp-content/uploads/2017/01/Insert-Photo-Here.jpg">
+                    <img src="https://demofox2.files.wordpress.com/2021/04/perlin_big_blue16x16.png">
                 </figure>
             </div>
         </section>
 
         <section class="container" id="showcase">
-            <div class="border">
-                <h4>Background #2</h4>
-                <p>
-                    The poisson disc sampling worked to distribute the stars but it distributed them a little too evenly. I want a more organic
-                    feeling for the background and it would make sense to have some less dense sections of stars and some more dense clusters.
-                    I am going to try using a script I wrote for terrain generation which layers multiple perlin noise maps over eachother to
-                    achieve a much more natural clustering effect.
-                </p>
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Background #2</h4>
+                        <p>
+                            The perlin noise worked to distribute the stars but it distributed them a little too evenly. I want a more organic
+                            feeling for the background and it would make sense to have some less dense sections of stars and some more dense clusters.
+                            I am going to try using a script I wrote for terrain generation which layers multiple perlin noise maps over eachother with various
+                            strengths to achieve a much more natural clustering effect.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*vs239SecVBaB4HvLsZ8O5Q.png">
+                </figure>
             </div>
         </section>
 
