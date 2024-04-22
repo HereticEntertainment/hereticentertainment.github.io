@@ -73,7 +73,8 @@ header p:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #5b23ba;
+    /*color: #5b23ba;*/
+    color:#000000;
     height: 300px;
     text-shadow: 0.25px 0.25px 0.25px #000000;
 }

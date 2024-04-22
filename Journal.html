@@ -9,6 +9,9 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css"> <!-- import font -->
         <link rel="stylesheet" type="text/css" href="main.css"> <!-- call main.css -->
         <link rel="stylesheet" type="text/css" href="AboutUs.css">
+        <!--MathJax for equations-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body> <!-- whole page -->
 
@@ -59,6 +62,69 @@
             <div class="row">
                 <figure class="col-sm-8">
                     <div class="border">
+                        <h4>Movement #1</h4>
+                        <p>
+                            I want the movement for the game to be physics based. You should be able to accelerate, decelerate, and turn based on the power of your
+                            ship thrusters and the mass of your ship. You should also be able to execute cool maneuvers using gravity such as gravity slingshots.
+                            To do this I am using Unity's force system which is attached to object rigidBodies. This allows me to add forces as vectors which makes
+                            changing velocity simpler.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <!--<img src="https://www1.specialolympicsontario.com/wp-content/uploads/2017/01/Insert-Photo-Here.jpg">-->
+                </figure>
+            </div>
+        </section>
+
+        <section class="container" id="showcase">
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Gravity</h4>
+                        <p>
+                            With the movement system working, its time to implement gravity into the game. To do this I am using the formula for gravity in a vacuum.
+                            The gravity manager script looks at all of the gravity affected objects in the scene and calculates the distance between them. It then
+                            calculates the force between them using the formula:
+                            $$F=G{m_1m_2 \over r^2}$$
+                            Where F is the force, G is the gravitational constant, m1 is the mass of the first object, m2 is the mass of the second object, and r is the distance
+                            between the two objects.
+                            <br><br>
+                            The next step is to apply the force to the objects, this means they accelerate relative to their masses and heavier objects have more inertia.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="Images/GravPic.PNG">
+                </figure>
+            </div>
+        </section>
+
+        <section class="container" id="showcase">
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Movement #2</h4>
+                        <p>
+                            The movement feels kind of gross right now. The ships feel unresponsive and it's difficult to decelerate if you've been moving in one direction
+                            for too long. My initial thought on how to solve this is to change the movement so that there is a maximum speed your ship can reach but that 
+                            removes the possibility of using gravity and other fun tricks to accelerate. The solution I settled on involves removing turn thrusters and setting 
+                            a specific turn rate which already makes the movement feel a lot better. The next thing I added was a brake button that allows the player to quickly 
+                            decelerate their ship in a fraction of the time it took to accelerate it. This allows the ship to feel more responsive and will be much more forgiving
+                            of mistakes and misinputs.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <!--<img src="https://www1.specialolympicsontario.com/wp-content/uploads/2017/01/Insert-Photo-Here.jpg">-->
+                </figure>
+            </div>
+        </section>
+
+        <section class="container" id="showcase">
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
                         <h4>Background #1 </h4>
                         <p>
                             The current background is pretty boring.
@@ -89,6 +155,24 @@
                 </figure>
                 <figure class="col-sm-4">
                     <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*vs239SecVBaB4HvLsZ8O5Q.png">
+                </figure>
+            </div>
+        </section>
+
+        <section class="container" id="showcase">
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Background #3</h4>
+                        <p>
+                            The noise looked kind of cool but wasn't quite the vibe I was going for. Generating thousands of stars also significantly slowed down the
+                            program and as that's not the main focus of the project, I deemed it to be unworth the hassle and have decided to shelf that portion of the
+                            game for now. In the future I may revisit that portion of the background and use shaders applied to 2D planes to cut down computing costs.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="Images/Stars.PNG">
                 </figure>
             </div>
         </section>
