@@ -81,7 +81,7 @@
             <div class="row">
                 <figure class="col-sm-8">
                     <div class="border">
-                        <h4>Gravity</h4>
+                        <h4>Gravity #1</h4>
                         <p>
                             With the movement system working, its time to implement gravity into the game. To do this I am using the formula for gravity in a vacuum.
                             The gravity manager script looks at all of the gravity affected objects in the scene and calculates the distance between them. It then
@@ -176,6 +176,63 @@
                 </figure>
                 <figure class="col-sm-4">
                     <img src="Images/Stars.PNG">
+                </figure>
+            </div>
+        </section>
+
+        <section class="container" id="showcase">
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Background #4</h4>
+                        <p>
+                            I've started experimenting with shaders recently. They are going to be useful for much more than just the background and I plan to use them for
+                            dynamically generating the planets and moons. Setting up the system for shaders has been quite a challenge and it would have been easier if I had
+                            planned to use them from the beginning. As it is now, I am trying to migrate my project from Unity's default project space into the Universal Render
+                            Pipeline to allow for the use of compute shader graphs.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="">
+                </figure>
+            </div>
+        </section>
+
+        <section class="container" id="showcase">
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Gravity #2: The Problem</h4>
+                        <p>
+                            I have been using Unity's built in gravity mass system attached to object rigidBodies because it is really easy to manage and I can use the builtin
+                            force systems for my custom gravity script. Unfortunately, this mass and force system has a few major limitations. The first limitation, is that
+                            there is a limit to how massive an object is able to be. For most projects, that would be alright, but for a space game where some objects need to
+                            be orders of magnitude heavier than others it causes problems. The second problem is that there is no way to give a negative mass to the system as
+                            it wouldn't know how to handle that with the different forces.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="">
+                </figure>
+            </div>
+        </section>
+
+        <section class="container" id="showcase">
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Gravity #2: A Solution</h4>
+                        <p>
+                            I'm beginning to think that the solution to this problem is creating my own system to manage the mass and forces applied to each object. This is
+                            going to be quite a challenging project but I think it should be manageable. I will need to create a system that dynamically handles forces and
+                            masses to prevent me having to hard code in all of the inputs.
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="">
                 </figure>
             </div>
         </section>
