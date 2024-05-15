@@ -237,6 +237,86 @@
             </div>
         </section>
 
+        <section class="container" id="showcase">
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Combat #1</h4>
+                        <p>
+                            While I don't have any enemies to add to the game quite yet, a good starting point is making weapons for the ships. I've decided that I want to
+                            make the weapons system modular and easy to change to allow for future changes and overhauls to the way things work. To do this, I've made a few
+                            different weapon sizes and have made it so that the different ships have the ability to fit certain amounts of weapons.
+                            <br>
+                            The weapons installed on a ship are stored in an array where each weapon and the amount of time before it is able to fire again are tracked.
+                            Using a linked array like this allows me to have a much easier time adjusting the fire rates of ships and allows me to install different types of
+                            weapons and have them fire on a delay from one another to produce a staggered firing sequence.
+                            <br>
+                            Having so many projectiles generating every time the ship shoots is expensive for the computer. With a little bit of extra work, I've used a trick
+                            called object caching from an old project to speed things up a bit. Instead of creating new projectiles every time, I create all of the projectiles
+                            I'll need at the beginning, and then when they are no longer used, instead of destroying them I simply hide them away in their own little area to be
+                            called when needed. This makes shooting much more efficient and slows down the computer much less.
+                            <a href="https://7842a-soup-generator.itch.io/7842a-soup-generator" target="_blank">Link to project using object caching</a>
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="Videos/Shooting Demo.gif">
+                </figure>
+            </div>
+        </section>
+
+        <section class="container" id="showcase">
+            <div class="row">
+                <figure class="col-sm-8">
+                    <div class="border">
+                        <h4>Physics #1: Requirements</h4>
+                        <p>
+                            This new gravity solution is going to be a lot of work and require me to build a new physics system almost entirely from scratch. Requirements
+                            for this system will be:
+                            <br>
+                            <ul>
+                                <li>Custom Mass Handler</li>
+                                <ul>
+                                    <li>Must allow incredibly large masses for solar system or greater scale scenes</li>
+                                    <li>Must allow negative masses for a few fun ideas I have later (ex. gravity propulsion and weapons)</li>
+                                </ul>
+                                <br>
+                                <li>Interacts with Current Gravity Handler</li>
+                                <ul>
+                                    <li>My current gravity handler works really well and it should be simple enough to define the new physics system as a class to allow
+                                        calling it in a similar way to the built in physics system
+                                    </li>
+                                </ul>
+                                <br>
+                                <li>Custom Force Handler</li>
+                                <ul>
+                                    <li>If I move away from using the default physics system for mass, I will also need to move away from the linked forces system which is
+                                        currently the backbone of my game. This will be a significant challenge as I will need to make something comparable and nearly as
+                                        efficient as a professionally designed system
+                                    </li>
+                                    <li>
+                                        In order to speed up this process, I won't make the entire physics system at once. I'll only implement new types of forces as they
+                                        become relevant to the game. Impulse and sustained force should be the first ones added, followed by drag and friction
+                                    </li>
+                                    <li>The forces used will be calculated from their given formulas and by having custom body attributes attached to each object with data.
+                                        Using a physics handler attached to an object should allow me to iterate through every physics affected object and apply the forces
+                                        required. Unfortunately, as the scale of the game grows, this will get incredibly expensive to calculate every frame
+                                    </li>
+                                    <li>
+                                        A solution to the speed and resources problem is to utilize multi-threading, which allows me to run multiple processes or "threads"
+                                        at the same time on different parts of the computer
+                                    </li>
+                                </ul>
+                            </ul>
+                        </p>
+                    </div>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="">
+                </figure>
+            </div>
+        </section>
+
         <footer class="container">
             <div class="row">
                 <p class="col-sm-4">Property of Heretic Entertainment</p>
