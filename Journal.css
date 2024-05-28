@@ -1,0 +1,9 @@
+section .col-sm-8 .border p {
+    text-align: left;
+}
+section .border li{
+    text-align: left;
+}
+section .border li.centered{
+    text-align: center;
+}
