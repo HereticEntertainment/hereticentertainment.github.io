@@ -322,9 +322,15 @@
             <div class="row">
                 <figure class="col-sm-8">
                     <div class="border">
-                        <h4>Physics #2:</h4>
+                        <h4>Physics #2: Custom Physics Engine</h4>
                         <p>
-                            
+                            The first thing I built was a very quick physics handler that contains variables for velocity and mass. I then added a function to the class called
+                            ForceAdd which takes a two dimensional vector input and then calculates the change in velocity that should be applied to the object. The reason for
+                            the somewhat backwards name "ForceAdd" is that the method "AddForce" is already a method in Unity's physics system. I am still using a lot of Unity's
+                            built in features so I can't simply disable the section that the physics system is in.
+                            <br>
+                            The next thing I added was a physics object class that inherits from the physics handler. This allows each of the physics objects to have their own
+                            mass and velocity.
                         </p>
                     </div>
                 </figure>
