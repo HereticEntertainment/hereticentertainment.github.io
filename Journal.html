@@ -330,7 +330,8 @@
                             built in features so I can't simply disable the section that the physics system is in.
                             <br>
                             The next thing I added was a physics object class that inherits from the physics handler. This allows each of the physics objects to have their own
-                            mass and velocity.
+                            mass and velocity. Each physics object also has a bool called isGrav which determines whether or not they should be dealt with by the gravity manager.
+                            
                         </p>
                     </div>
                 </figure>
